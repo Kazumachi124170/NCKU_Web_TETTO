@@ -33,3 +33,6 @@ header {
         .posts_post_detail_account_img {
           width: 1.563rem;
           border-radius: 50%; }
+
+.vsc-initialized {
+  overflow-x: hidden; }
