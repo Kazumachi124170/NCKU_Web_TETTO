@@ -10,6 +10,6 @@ http.listen(port, () => {
 })
 
 
-app.use(express.static(`${__dirname}/dist`))
+app.use(express.static(`${__dirname}/public`))
 
 
