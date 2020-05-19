@@ -1,0 +1,65 @@
+//@mixin for keyframe
+=keyframes($name)
+  @-webkit-keyframes #{$name}
+    @content
+  @-moz-keyframes #{$name}
+    @content
+  @-ms-keyframes #{$name}
+    @content
+  @keyframes #{$name}
+    @content
+
+//@mixin for animation
+=animation($content)
+  -webkit-animation: $content
+  -moz-animation: $content
+  -o-animation: $content
+  animation: $content
+
++keyframes(fadein)
+  from
+    opacity: 0
+  to
+    opacity: 1
+
++keyframes(fadeout)
+  from
+    opacity: 1
+  to
+    opacity: 0
+
++keyframes(want_2pink)
+  to
+    background-color: #FF9A9A
+
++keyframes(want_2blue)
+  to
+    background-color: #8BA9D2
+
+.fadeout
+  +animation(fadeout)
+  animation-duration: 1s
+  animation-fill-mode: forwards  
+
+.fadein
+  +animation(fadein)
+  animation-duration: 1s
+  animation-fill-mode: forwards
+
+.want_2pink
+  +animation(want_2pink)
+  animation-duration: 1s
+  animation-fill-mode: forwards  
+
+.want_2blue
+  +animation(want_2blue)
+  animation-duration: 1s
+  animation-fill-mode: forwards
+
+.pink
+  background-color: #FF9A9A
+
+.blue
+  background-color: #8BA9D2
+
+
