@@ -1,6 +1,6 @@
 header {
   width: 100%;
-  height: 7.2rem;
+  height: 10vh;
   background-color: #ECECEC; }
 
 .posts {
@@ -24,6 +24,7 @@ header {
         white-space: nowrap;
         font-size: 1.1rem;
         letter-spacing: -0.04rem;
+        text-overflow: ellipsis;
         color: #707070; }
       .posts_post_detail_account {
         display: inline-flex;
@@ -36,6 +37,7 @@ header {
           margin: auto;
           font-size: 0.75rem;
           letter-spacing: -0.04rem;
+          text-overflow: ellipsis;
           color: #707070; }
         .posts_post_detail_account_img {
           width: 1.563rem;
@@ -44,3 +46,13 @@ header {
 
 .vsc-initialized {
   overflow-x: hidden; }
+
+body {
+  overflow: auto;
+  overflow-x: hidden; }
+
+#id_header {
+  width: 100%; }
+
+.tetto {
+  padding-left: 5vw; }

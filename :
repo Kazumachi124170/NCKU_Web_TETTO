@@ -35,10 +35,7 @@ $(document).ready(function() {
 
   $('.request').click(function(){
     console.log("OUTCH!")
-  });
 
-  $('.btn').click(function(){
-    console.log("OUTCH!")
 
 
 

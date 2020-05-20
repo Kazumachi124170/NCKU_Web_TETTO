@@ -5,76 +5,129 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link href="./css/all.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../css/font.css">
+    <!--link(rel="stylesheet" type="text/css" href="../css/Footer_Header.css")-->
+    <link href="./css/modal_post.css" rel="stylesheet">
     <link href="./css/animation.css" rel="stylesheet">
     <link href="./css/post.css" rel="stylesheet">
   </head>
   <body>
-    <header></header>
-    <!-- Title-->
-    <div class="title">
-      <p class="title_title">讓起床更有活力的睡前儀式</p>
-      <div class="title_account">
-        <p class="title_account_id">eric_50336</p><img class="title_account_photo" src="./res/img/content_1.png">
-      </div>
+    <!--Fixed navbar-->
+    <div class="container-fluid" id="id_header"><img class="img-responsive back" id="back" src="../image/footer/Back.svg">
+      <h1 class="tetto">TETTO</h1>
     </div>
-    <!-- Image--><img class="photo" src="./res/img/main.png">
-    <!-- Interact-->
-    <div class="interact">
-      <div class="interact_likes">
-        <div class="interact_likes_heart"><img class="interact_likes_heart_logo" src="./res/img/heart.png">
-          <p class="interact_likes_heart_number">326</p>
-        </div>
-        <div class="interact_likes_pen"><img class="interact_likes_pen_logo" src="./res/img/pen.png">
-          <p class="interact_likes_pen_number">23</p>
+    <!-- Content Container-->
+    <div class="container-fluid" id="id_content">
+      <!-- Title-->
+      <div class="title">
+        <p class="title_title">讓起床更有活力的睡前儀式</p>
+        <div class="title_account">
+          <p class="title_account_id">eric_50336</p><img class="title_account_photo" src="./res/img/content_1.png">
         </div>
       </div>
-      <div class="interact_notify"><img class="interact_notify_bell" src="./res/img/bell.png"><img class="interact_notify_follow" src="./res/img/bookmark.png"></div>
-    </div>
-    <!-- Abstract-->
-    <p class="abstract">設立一個整齊有序的小空間，回到家後選個喜歡的時間坐在這裡，為一天做個總結。換上家居服，坐在鏡子前，調暗燈光，卸下臉上和心裡的裝扮。過程裡多些自我覺察，體驗慢下來的步調，靜靜享受和自己相處的時間，白天起床後，反向重複這個儀式，打理好精神奕奕的臉，把睡衣掛回吊衣桿上，換上準備好的穿搭，又是嶄新的一天。</p>
-    <!-- Content-->
-    <div class="content">
-      <p class="content_title">About the room</p>
-      <div class="content_image"><img class="content_image_1" src="./res/img/content_2.png"><img class="content_image_2" src="./res/img/content_2.png"></div>
-      <div class="content_paragraph">
-        <p class="content_paragraph_title">EKOLSUND 躺椅</p><img class="content_paragraph_stars">
+      <!-- Image--><img class="photo" src="./res/img/main.png">
+      <!-- Interact-->
+      <div class="interact">
+        <div class="interact_likes">
+          <div class="interact_likes_heart"><img class="interact_likes_heart_logo" src="./res/img/heart.png">
+            <p class="interact_likes_heart_number">326</p>
+          </div>
+          <div class="interact_likes_pen"><img class="interact_likes_pen_logo" src="./res/img/pen.png">
+            <p class="interact_likes_pen_number">23</p>
+          </div>
+        </div>
+        <div class="interact_notify"><img class="interact_notify_bell" src="./res/img/bell.png"><img class="interact_notify_follow" src="./res/img/bookmark.png"></div>
       </div>
-      <p class="content_content">設立一個整齊有序的小空間，回到家後選個喜歡的時間坐在這裡，為一天做個總結。換上家居服，坐在鏡子前，調暗燈光，卸下臉上和心裡的裝扮。過程裡多些自我覺察，體驗慢下來的步調，靜靜享受和自己相處的時間，白天起床後，反向重複這個儀式，打理好精神奕奕的臉，把睡衣掛回吊衣桿上，換上準備好的穿搭，又是嶄新的一天。</p>
-      <div class="content_category">
-        <p class="content_category_title">Category</p>
-        <div class="content_category_content">
-          <p class="content_category_content_first content_category_content_content">空間</p>
-          <p class="content_category_content_big">> </p>
-          <p class="content_category_content_second content_category_content_content">套房</p>
-          <p class="content_category_content_big">></p>
-          <p class="content_category_content_third content_category_content_content">5坪</p>
+      <!-- Abstract-->
+      <p class="abstract">設立一個整齊有序的小空間，回到家後選個喜歡的時間坐在這裡，為一天做個總結。換上家居服，坐在鏡子前，調暗燈光，卸下臉上和心裡的裝扮。過程裡多些自我覺察，體驗慢下來的步調，靜靜享受和自己相處的時間，白天起床後，反向重複這個儀式，打理好精神奕奕的臉，把睡衣掛回吊衣桿上，換上準備好的穿搭，又是嶄新的一天。</p>
+      <!-- Content-->
+      <div class="content">
+        <p class="content_title">About the room</p>
+        <div class="content_image"><img class="content_image_1" src="./res/img/content_2.png"><img class="content_image_2" src="./res/img/content_2.png"></div>
+        <div class="content_paragraph">
+          <p class="content_paragraph_title">EKOLSUND 躺椅</p><img class="content_paragraph_stars">
+        </div>
+        <p class="content_content">設立一個整齊有序的小空間，回到家後選個喜歡的時間坐在這裡，為一天做個總結。換上家居服，坐在鏡子前，調暗燈光，卸下臉上和心裡的裝扮。過程裡多些自我覺察，體驗慢下來的步調，靜靜享受和自己相處的時間，白天起床後，反向重複這個儀式，打理好精神奕奕的臉，把睡衣掛回吊衣桿上，換上準備好的穿搭，又是嶄新的一天。</p>
+        <div class="content_category">
+          <p class="content_category_title">Category</p>
+          <div class="content_category_content">
+            <p class="content_category_content_first content_category_content_content">空間</p>
+            <p class="content_category_content_big">> </p>
+            <p class="content_category_content_second content_category_content_content">套房</p>
+            <p class="content_category_content_big">></p>
+            <p class="content_category_content_third content_category_content_content">5坪</p>
+          </div>
+        </div>
+        <div class="content_hashtag">
+          <p class="content_hashtag_title">Hashtag</p>
+          <p class="content_hashtag_first content_hashtag_hashtag">ikea</p>
+          <p class="content_hashtag_second content_hashtag_hashtag">粉色</p>
+          <p class="content_hashtag_third content_hashtag_hashtag">北歐風</p>
+          <p class="content_hashtag_forth content_hashtag_hashtag">簡約</p>
         </div>
       </div>
-      <div class="content_hashtag">
-        <p class="content_hashtag_title">Hashtag</p>
-        <p class="content_hashtag_first content_hashtag_hashtag">ikea</p>
-        <p class="content_hashtag_second content_hashtag_hashtag">粉色</p>
-        <p class="content_hashtag_third content_hashtag_hashtag">北歐風</p>
-        <p class="content_hashtag_forth content_hashtag_hashtag">簡約</p>
+      <!-- Requests-->
+      <div class="requests">
+        <p class="requests_title">Request</p>
+        <div class="requests_request" id="want_0"><img class="requests_request_image" src="./res/img/request_1.png" id="want_img_0">
+          <p class="requests_request_number" id="want_number_0">1089</p>
+          <p class="requests_request_want" id="want_btn_0">我也想知道!</p>
+        </div>
+        <div class="requests_request" id="want_1"><img class="requests_request_image" src="./res/img/request_1.png" id="want_img_1">
+          <p class="requests_request_number" id="want_number_1">321</p>
+          <p class="requests_request_want" id="want_btn_1">我也想知道!</p>
+        </div>
       </div>
     </div>
-    <!-- Requests-->
-    <div class="requests">
-      <p class="requests_title">Request</p>
-      <div class="requests_request" id="want_0"><img class="requests_request_image" src="./res/img/request_1.png" id="want_img_0">
-        <p class="requests_request_number" id="want_number_0">1089</p>
-        <p class="requests_request_want" id="want_btn_0">我也想知道!</p>
-      </div>
-      <div class="requests_request" id="want_1"><img class="requests_request_image" src="./res/img/request_1.png" id="want_img_1">
-        <p class="requests_request_number" id="want_number_1">321</p>
-        <p class="requests_request_want" id="want_btn_1">我也想知道!</p>
+    <!--Footer-->
+    <div class="container-fluid" id="id_footer">
+      <div class="row">
+        <div class="col"><a href="#MainPage"><img class="img-responsive footer_MainPage" src="../image/footer/MianPage.svg">
+            <h2 class="text MainPage">主頁</h2></a></div>
+        <div class="col"><a href="#Search"><img class="img-responsive footer_Search" src="../image/footer/Search.svg">
+            <h2 class="text Search">搜尋</h2></a></div>
+        <div class="col"><a href="#Category"><img class="img-responsive footer_Category" src="../image/footer/Category.svg">
+            <h2 class="text Category">分類</h2></a></div>
+        <div class="col"><a href="#Msg"><img class="img-responsive footer_Msg" src="../image/footer/Msg.svg">
+            <h2 class="text Msg">通知</h2></a></div>
+        <div class="col"><a href="#Profile"><img class="img-responsive footer_Profile" src="../image/footer/Profile.svg">
+            <h2 class="text Profile">個人檔案</h2></a></div>
       </div>
     </div>
     <!-- Request-->
-    <div class="request"><img class="request_icon" src="./res/img/request.png">
+    <div class="request" data-toggle="modal" data-target="#exampleModalCenter"><img class="request_icon" src="./res/img/request.png">
       <p class="request_content">單品請求</p>
     </div>
+    <!--Button trigger modal-->
+    <!--button(type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter") Launch demo modal-->
+    <!--Modal-->
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">請點擊想請求的單品</h5>
+          </div>
+          <div class="modal-body"><img class="modal_photo_main" src="./res/img/main.png"></div>
+          <div class="modal-footer">
+            <button class="btn btn-secondary btn_cancel" type="button" data-dismiss="modal">Cancel</button><img class="modal_photo_preview" src="./res/img/content_2.png">
+            <button class="btn btn-secondary btn_next" type="button" data-dismiss="modal" data-toggle="modal" data-target="#exampleModalCenter-2">Next</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="exampleModalCenter-2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content modal-content-2">
+          <div class="modal-header modal-header-2">
+            <h5 class="modal-title modal-title-2" id="exampleModalLongTitle">單品請求成功</h5>
+          </div>
+          <div class="modal-body modal-body-2"><img class="modal_photo_main modal-photo-main-2" src="./res/img/ok.png"></div>
+        </div>
+      </div>
+    </div>
     <script src="../js/post.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
   </body>
 </html>
